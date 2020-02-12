@@ -1,0 +1,176 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: -3vh;
+    transition: top ease 1s;
+    z-index: 12;
+}
+
+
+
+.fixed-textarea {
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+}
+
+.fixed-textarea textarea::placeholder {
+    color: black;
+    
+    text-align: center;
+}
+
+.fixed-textarea textarea {
+  width: 100%;
+    height: 100%;
+    padding: 1% 2%;
+    border: none;
+    outline: none;
+    display: none;
+    font-size: 20px;
+}
+
+.fixed-textarea div {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    display: none;
+}
+
+#selectItem:active {
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons {
+    text-align: center;
+    padding: -2% 1%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.radio, .btn, #pickColor {
+    display: none;
+}
+
+.options, option, .fontFamilySelect, #selectItem {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.labelBtn {
+    cursor: pointer;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1%;
+}
+
+#backG {
+    padding-top: 3%;
+}
+
+
+
+#modal {
+    position: fixed;
+    width: 100%; height: 100%;
+    top: 0px; left: 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+}
+
+#modal:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px; height: 25%;
+    background: transparent;
+}
+
+#modal section {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 25%; max-width: 25%; 
+    background: rgba(0,0,0, 0);
+    box-shadow: 0px 0px 0px 2px #fff, 2px 2px 5px 2px rgba(0,0,0,.6), 0px 0px 30px 0px rgba(0,0,0,.6);
+}
+
+#modal header {
+    position: relative;
+    padding: 5px;
+    background: rgba(0,0,0, 0);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0, 0);
+}
+
+#modal article { padding: 10px 15px; }
+
+.img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0, 0);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select::after {
+    background: rgba(0,0,0, 0);
+    border: none;
+}
+
+option:hover {
+    background: rgba(rgba(75, 97, 219, 0.226), green, blue, alpha);
+    color: blue;
+}
+
+.btn {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+
+.hide {
+    display: none;
+}
+
+
+.bold {
+    font-weight: bold;
+    
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.lighter {
+    font-weight: lighter;
+}
+
+
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.normal {
+    font-style: normal;
+}
+
+
+
+textarea::selection {
+	background: gold;
+}
+ 
+.dark {
+    background-color:  #18181d;
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+
+
+

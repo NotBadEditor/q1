@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NotBad WebEditor</title>
+    <link rel="icon" href="" type="image/x-icon">
+    <style>
+
+    </style>
+    <table border="0" align="center">
+        <tr>
+            <td>
+                <form name="conv_form">
+
+                    <TEXTAREA name="src_text" COLS=55 ROWS=25 WRAP=VIRTUAL></TEXTAREA>
+            </td>
+            <td><textarea name=dest_text cols=55 rows=25 wrap=virtual></textarea></td>
+        </tr>
+    </table>
+    <center>
+        <input value=" Справка " type="reset">&nbsp;&nbsp;
+        <input value=" Кодируем! " onclick="Code();return 0;" type="button">&nbsp;&nbsp;
+        <input value=" Очистить " onclick="ClearForm();return 0;" type="button">
+    </center>
+    </form>
+    <script type="text/javascript">
+< !--
+            function ClearForm() {
+                document.conv_form.dest_text.value = "";
+                document.conv_form.src_text.value = "";
+            }
+        function Code() {
+            var temp = "", i, l, c = 0, out = "";
+            var str = document.conv_form.src_text.value;
+            l = 0;
+            if (str == "") return;
+            while (l <= str.length - 1) {
+                out = out + str.charCodeAt(l) + '!';
+                l++;
+            }
+            document.conv_form.dest_text.value = "<scri" + "pt>\nfunction s_(s,c){return s.charAt(c)};function D_(){" +
+                "var temp=\"\",i,c=0,out=\"\";var str=\"" + out + "\";" +
+                "l=str.length;" +
+                "while(c<=str.length-1){" +
+                "while(s_(str,c)!=\'!\')temp=temp+s_(str,c++);" +
+                "c++;" +
+                "out=out+String.fromCharCode(temp);" +
+                "temp=\"\";}" +
+                "document.write(out);}" +
+                "\n<\/script>" +
+                "<script>\nD_();\n<\/script>";
+        }
+//-->
+    </script>

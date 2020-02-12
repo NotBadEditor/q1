@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NotBad Editor</title>
+    <link rel="icon" href="img/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleW3.css">
+    <link rel="stylesheet" href="css/myStyleCss.css">
+    <script src="js/jquery/emmet.min.js"></script>
+    <script src="js/jquery/jquery.js"></script>
+</head>
+<script>
+    emmet.require('textarea').setup({
+        pretty_break: true,
+        use_tab: true
+    });
+</script>
+
+<body id="bbb">
+    <div slass="container">
+        <div class="main">
+            <div class="buttons">
+                <label for="modalWindow" class="labelBtn" id="Result">Run</label>
+                <label for="openModal" class="labelBtn openModal">Options:</label>
+                <select id="selectItem">
+                    <option id="html">html</option>
+                    <option id="css">css</option>
+                    <option id="js">js</option>
+                    <option id="jsCode">js</option>
+                </select>
+                </select>
+            </div>
+        </div>
+        <div class="container1">
+            <img src="" class="img">
+            <form class="fixed-textarea" name="textareaForm" id="btnText">
+                <textarea name="txt" class="html text" id="backG" placeholder="html"></textarea>
+                <textarea name="txt" class="css text" id="backG" placeholder="css"></textarea>
+                <form name="conv_form">
+                    <textarea name="txt" class="js text" id="backG" placeholder="js"></textarea>
+                    <textarea name="src_text" class="jsCode text" id="" placeholder="jsCode"></textarea>
+                    <textarea name="dest_text" class="jsCode text" id="" placeholder="jsCode"></textarea>
+                </form>
+            </form>
+        </div>
+
+        <div class="w3-container">
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content">
+                    <div class="w3-container">
+                        <div name="dest_text" class="res" id="iframe"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="modal" class="hide">
+            <section>
+                <article>
+                    <div class="options">
+                        <label for="btnCleanPage" class="labelBtn">CleanPage</label>
+                        <label for="code" class="labelBtn">Code</label>
+                        <label for="clean2" class="labelBtn">Theme</label>
+                        <label for="openfile" class="labelBtn">openTxtFile</label>
+                        <label for="openimg" class="labelBtn">OpenimgFile</label>
+                        <input type="color" class="labelBtn" value="#ff0000" id="colorWell">
+                        <label for="checkBox" class="labelBtn">Bold</label>
+                        <label for="modalBtn" class="labelBtn">Theme</label>
+                    </div>
+
+                    <select class="fontFamilySelect" id="fontFamilySelect" size="1">
+                        <option>FontWeight</option>
+                        <option id="bold">bold</option>
+                        <option id="bolder">bolder</option>
+                        <option id="lighter">lighter</option>
+                        <option id="italic">italic</option>
+                        <option id="oblique">oblique</option>
+                    </select>
+
+            </section>
+        </div>
+    </div>
+
+    <input value="Code" id="code" onclick="Code();return 0;" type="button" class="btn">&nbsp;&nbsp;
+    <input value="Clean" id="clean2" onclick="ClearForm();return 0;" type="button" class="btn">
+
+    <input type="file" onchange="previewFile()" id="openimg" class="btn">
+    <input type="file" id="openfile" onchange='openFile(event);' class="btn">
+
+    <input type="file" id="openFile" class="btn">
+    <input type="file" if="openImgFile" class="btn">
+    <input type="checkbox" onclick="check()" id="checkBox" class="btn">
+    <input type="button" class="btn" id="openModal">
+
+    <input type="button" class="btn btnRun" id="modalWindow" value="Run"
+        onclick="document.getElementById('id01').style.display='block'">
+    <input name="btn" type="button" class="btn" id="btnCleanPage" value="CleanPage">
+    <input type="button" class="btn" value="Pick color" onclick="GFG_Fun()" id="modalBtn">
+
+</body>
+<script src="js/script.js"></script>
+<script src="js/script2.js"></script>
+
+</html>
